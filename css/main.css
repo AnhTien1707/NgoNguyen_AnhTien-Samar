@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html , body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    color: #636363;
+    font-weight: 400;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --animate-duration: 2s!important;
+    --text-color:#070120;
+    --white-color:#fff;
+    --primary-color:#f55f8d;
+}
+
+/* ------------- Animation ----------- */
+
+@keyframes uptoDown{
+    49% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    
+    }
+}
+@keyframes righttoLeft{
+    49%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+}
+
+@keyframes move{
+    0% {
+        transform: rotate(1deg)  translate(2px , 2px);
+    }
+    50% {
+        transform: rotate(-1deg)  translate(-2px , -2px);
+    }
+    100%{
+        transform: rotate(1deg)  translate(2px , 2px);
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn{
+    padding: 20px 35px;
+    background-size: 200%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-position: right center;
+}
+
+.title--p{
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.title--h2{
+    font-size: 7rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.p--16px{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.section--inner{
+    padding-top: 115px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #f55f8d!important;
+}
+
+
+
